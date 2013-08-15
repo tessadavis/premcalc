@@ -1,0 +1,45 @@
+<h1>Listing preterms</h1>
+
+<table>
+  <tr>
+    <th>Gestation</th>
+    <th>Gender</th>
+    <th>Steroids</th>
+    <th>Singleton</th>
+    <th>Sga</th>
+    <th>Nec</th>
+    <th>Survival</th>
+    <th>Ivh12</th>
+    <th>Ivh34</th>
+    <th>Cld</th>
+    <th>Imv</th>
+    <th>Homeox</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @preterms.each do |preterm| %>
+  <tr>
+    <td><%= preterm.gestation %></td>
+    <td><%= preterm.gender %></td>
+    <td><%= preterm.steroids %></td>
+    <td><%= preterm.singleton %></td>
+    <td><%= preterm.sga %></td>
+    <td><%= preterm.nec %></td>
+    <td><%= preterm.survival %></td>
+    <td><%= preterm.IVH12 %></td>
+    <td><%= preterm.IVH34 %></td>
+    <td><%= preterm.CLD %></td>
+    <td><%= preterm.IMV %></td>
+    <td><%= preterm.homeox %></td>
+    <td><%= link_to 'Show', preterm %></td>
+    <td><%= link_to 'Edit', edit_preterm_path(preterm) %></td>
+    <td><%= link_to 'Destroy', preterm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Preterm', new_preterm_path %>

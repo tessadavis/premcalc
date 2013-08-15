@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  gestation: 1
+  gender: MyString
+  steroids: false
+  singleton: false
+  sga: false
+  nec: 9.99
+  survival: 9.99
+  IVH12: 9.99
+  IVH34: 9.99
+  CLD: 9.99
+  IMV: 9.99
+  homeox: 9.99
+
+two:
+  gestation: 1
+  gender: MyString
+  steroids: false
+  singleton: false
+  sga: false
+  nec: 9.99
+  survival: 9.99
+  IVH12: 9.99
+  IVH34: 9.99
+  CLD: 9.99
+  IMV: 9.99
+  homeox: 9.99

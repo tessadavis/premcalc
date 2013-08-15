@@ -1,0 +1,65 @@
+<%= form_for(@preterm) do |f| %>
+  <% if @preterm.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@preterm.errors.count, "error") %> prohibited this preterm from being saved:</h2>
+
+      <ul>
+      <% @preterm.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gestation %><br />
+    <%= f.number_field :gestation %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :steroids %><br />
+    <%= f.check_box :steroids %>
+  </div>
+  <div class="field">
+    <%= f.label :singleton %><br />
+    <%= f.check_box :singleton %>
+  </div>
+  <div class="field">
+    <%= f.label :sga %><br />
+    <%= f.check_box :sga %>
+  </div>
+  <div class="field">
+    <%= f.label :nec %><br />
+    <%= f.text_field :nec %>
+  </div>
+  <div class="field">
+    <%= f.label :survival %><br />
+    <%= f.text_field :survival %>
+  </div>
+  <div class="field">
+    <%= f.label :IVH12 %><br />
+    <%= f.text_field :IVH12 %>
+  </div>
+  <div class="field">
+    <%= f.label :IVH34 %><br />
+    <%= f.text_field :IVH34 %>
+  </div>
+  <div class="field">
+    <%= f.label :CLD %><br />
+    <%= f.text_field :CLD %>
+  </div>
+  <div class="field">
+    <%= f.label :IMV %><br />
+    <%= f.text_field :IMV %>
+  </div>
+  <div class="field">
+    <%= f.label :homeox %><br />
+    <%= f.text_field :homeox %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
